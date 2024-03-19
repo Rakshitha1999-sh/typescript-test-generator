@@ -5,7 +5,8 @@
 3. The browser page automatically opens with the react app running at localhost:3000
 
 4. Provide the following typescript code snippet to generate the test cases:
-''' // This is a simple utility function to check if a number is even
+   
+// This is a simple utility function to check if a number is even
 function isEven(num: number): boolean {
     return num % 2 === 0;
 }
@@ -37,4 +38,4 @@ function sum(numbers: number[]): number {
         total += num;
     }
     return total;
-} '''
+} 
