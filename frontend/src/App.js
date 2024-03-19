@@ -17,19 +17,23 @@ function App() {
   return (
     <div>
       <center>
-      <h2> Input your typescript code here : </h2>
-      <textarea border={3} rows={20} cols={120} value={typescriptCode} onChange={(e) => setTypescriptCode(e.target.value)} />
-      <br></br>
-      <br></br>
+      <h1> Generate Test Cases </h1>
+      <textarea 
+      border={3} 
+      rows={20} 
+      cols={120} 
+      placeholder="Enter TypeScript code here..."
+      value={typescriptCode} onChange={(e) => setTypescriptCode(e.target.value)} />
+      <br />
+      <br />
       <button onClick={handleGenerateTestCases}>Generate Test Cases</button>
-      <br></br>
-      <br></br>
-      <div>
-        {testCases.map((testCase, index) => (
-          <div key={index}>{testCase}</div>
-        ))}
-      </div>
       </center>
+      <h2>Test Cases:</h2>
+      <ol>
+        {testCases.map((testCase, index) => (
+          <li key={index}>{testCase}</li>
+        ))}
+      </ol>
     </div>
   );
 }
