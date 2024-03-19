@@ -18,7 +18,7 @@ function App() {
     <div>
       <center>
       <h2> Input your typescript code here : </h2>
-      <textarea border={3} rows={25} cols={120} value={typescriptCode} onChange={(e) => setTypescriptCode(e.target.value)} />
+      <textarea border={3} rows={20} cols={120} value={typescriptCode} onChange={(e) => setTypescriptCode(e.target.value)} />
       <br></br>
       <br></br>
       <button onClick={handleGenerateTestCases}>Generate Test Cases</button>
