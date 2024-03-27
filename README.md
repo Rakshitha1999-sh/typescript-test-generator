@@ -4,7 +4,7 @@
 
 3. The browser page automatically opens with the react app running at localhost:3000
 
-4. Sample typescript code snippets to generate the test cases:
+4. Sample input typescript code snippets to generate the test cases:
    
 // This is a simple utility function to check if a number is even
 function isEven(num: number): boolean {
