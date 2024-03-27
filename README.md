@@ -4,7 +4,7 @@
 
 3. The browser page automatically opens with the react app running at localhost:3000
 
-4. Provide the following typescript code snippet to generate the test cases:
+4. Sample typescript code snippets to generate the test cases:
    
 // This is a simple utility function to check if a number is even
 function isEven(num: number): boolean {
@@ -39,3 +39,37 @@ function sum(numbers: number[]): number {
     }
     return total;
 } 
+
+// This function calculates the area of a circle
+function calculateArea(radius: number): number {
+    return Math.PI * radius * radius;
+}
+
+// This function checks if a number is prime
+function isPrime(num: number): boolean {
+    if (num <= 1) {
+        return false;
+    }
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
+// This function generates Fibonacci sequence up to a given limit
+function generateFibonacci(limit: number): number[] {
+    const sequence: number[] = [0, 1];
+    let a = 0;
+    let b = 1;
+    let next = a + b;
+    while (next <= limit) {
+        sequence.push(next);
+        a = b;
+        b = next;
+        next = a + b;
+    }
+    return sequence;
+}
+
