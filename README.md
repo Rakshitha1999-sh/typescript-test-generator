@@ -58,18 +58,4 @@ function isPrime(num: number): boolean {
     return true;
 }
 
-// This function generates Fibonacci sequence up to a given limit
-function generateFibonacci(limit: number): number[] {
-    const sequence: number[] = [0, 1];
-    let a = 0;
-    let b = 1;
-    let next = a + b;
-    while (next <= limit) {
-        sequence.push(next);
-        a = b;
-        b = next;
-        next = a + b;
-    }
-    return sequence;
-}
 
